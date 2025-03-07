@@ -9,6 +9,7 @@
     foaf:name "Lander Maes"^^xsd:string ;
     schema:jobTitle "Student"^^xsd:string ;
     dct:subject "Computer Science"^^xsd:string ;
-    schema:birthPlace <https://www.wikidata.org/entity/Q136885> ;  # Sint-Niklaas in Wikidata
-    schema:knows <http://example.org/participants/student1>, <http://example.org/participants/student2> .
+    schema:birthPlace <https://www.wikidata.org/entity/Q136885> ;
+    schema:knows <https://gc-cc.github.io/#me>, <https://juliettevis.github.io/introduction.jsonld> .
+ > .
 
