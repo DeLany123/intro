@@ -11,5 +11,4 @@
     dct:subject "Computer Science"^^xsd:string ;
     schema:birthPlace <https://www.wikidata.org/entity/Q136885> ;
     schema:knows <https://gc-cc.github.io/#me>, <https://juliettevis.github.io/introduction.jsonld> .
- > .
 
