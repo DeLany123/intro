@@ -1,4 +1,4 @@
-@base <http://example.org/participants/Lander_Maes/> .
+@base <https://github.ugent.be/pages/landmaes/landmaes.github.io/intro.ttl> .
 @prefix schema: <http://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
