@@ -2,7 +2,7 @@
 
 Deze repository bevat RDF-data in Turtle-formaat. Bekijk het hier:
 
-🔗 [Bekijk RDF-data](https://github.ugent.be/pages/landmaes/landmaes.github.io/intro.ttl)
+🔗 [Bekijk RDF-data](https://delany123.github.io/intro/intro.ttl)
 
 ## Over deze data
 - Dit is een voorbeeld van een RDF dataset gepubliceerd via GitHub Pages.
