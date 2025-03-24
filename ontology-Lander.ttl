@@ -1,0 +1,30 @@
+@base <https://delany123.github.io/intro/ontology-Lander.ttl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Photo a rdfs:Class .
+:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person." .
+    #rdfs:seeAlso foaf:Person .
+:Place a rdfs:Class .
+
+:hasTitle a rdf:Property ;
+    rdfs:domain :Photo ;
+    rdfs:range rdfs:Literal .
+
+:hasDescription a rdf:Property ;
+    rdfs:domain :Photo ;
+    rdfs:range rdfs:Literal .
+
+:takenBy a rdf:Property ;
+    rdfs:domain :Photo ;
+    rdfs:range :Person .
+
+:showsPerson a rdf:Property ;
+    rdfs:domain :Photo ;
+    rdfs:range :Person .
+
+:takenAt a rdf:Property ;
+    rdfs:domain :Photo ;
+    rdfs:range :Place .

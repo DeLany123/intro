@@ -1,0 +1,17 @@
+@prefix : <https://delany123.github.io/intro/photos-Lander.ttl#> .
+@prefix ont: <https://delany123.github.io/intro/ontology-Lander.ttl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:me a ont:Person ;
+    rdfs:label "Lander" .
+
+:myRoom a ont:Place ;
+    rdfs:label "My room" .  
+
+<https://delany123.github.io/intro/Me_ai.webp> a ont:Photo ;
+    ont:hasTitle "Me" ;
+    ont:hasDescription "A photo of me programming in a dark room like a real it'er." ;
+    ont:takenBy :me ;
+    ont:showsPerson :me ;
+    ont:takenAt :myRoom .
