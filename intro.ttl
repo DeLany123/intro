@@ -12,3 +12,4 @@
     schema:memberOf <https://pietercolpaert.be/teaching/kg/#2024-2025>;
     schema:knows <https://www.ebisi.be/stijndeknudt/#me>, <https://gc-cc.github.io/#me>, <https://juliettevis.github.io/introduction.jsonld> , <https://kiaverme.github.io/Assignment2.jsonld> .
 
+<https://delany123.github.io/intro/intro.ttl> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "25c9a128-2428-4985-ae42-c6835ae6600c" .

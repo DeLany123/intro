@@ -1,44 +1,49 @@
-@prefix : <https://delany123.github.io/intro/ontology-Lander.ttl> .
+@prefix ont: <https://delany123.github.io/intro/ontology-Lander.ttl> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-:Photo a rdfs:Class ;
+ont:Photo a rdfs:Class ;
     rdfs:label "Photo" ;
     rdfs:comment "A photo taken by someone." ;
     rdfs:subClassOf foaf:Image .
 
-:Person a rdfs:Class ;
-    rdfs:label "Person" ;
-    rdfs:comment "A person." ;
-    rdfs:subClassOf foaf:Person .
-
-:Place a rdfs:Class ;
-    rdfs:label "Place" ;
-    rdfs:comment "A location where a photo was taken." .
-
-:hasTitle a rdf:Property ;
+ont:name a rdf:Property ;
     rdfs:domain :Photo ;
     rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf foaf:name .
 
-:hasDescription a rdf:Property ;
+ont:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person." ;
+    rdfs:subClassOf foaf:Person .
+
+ont:Place a rdfs:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A location where a photo was taken." .
+
+ont:hasTitle a rdf:Property ;
+    rdfs:domain :Photo ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf foaf:name .
+
+ont:hasDescription a rdf:Property ;
     rdfs:domain :Photo ;    
     rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf foaf:depiction.
 
-:takenBy a rdf:Property ;
+ont:takenBy a rdf:Property ;
     rdfs:domain :Photo ;
     rdfs:range :Person ;
     rdfs:subPropertyOf foaf:maker .
 
-:showsPerson a rdf:Property ;
+ont:showsPerson a rdf:Property ;
     rdfs:domain :Photo ;
     rdfs:range :Person ;
     rdfs:subPropertyOf foaf:depicts .
 
 
-:takenAt a rdf:Property ;
+ont:takenAt a rdf:Property ;
     rdfs:domain :Photo ;
     rdfs:range :Place ;
     rdfs:subPropertyOf foaf:based_near .
